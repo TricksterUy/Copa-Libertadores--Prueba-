@@ -1,0 +1,226 @@
+/*Asignamos la fuente para todo el documento*/
+@font-face {
+    font-family: rubik;
+    src: url(fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+/*Asignamos las medias queries para que se ajuste a otras pantallas*/
+@media screen and (max-width:600px){
+    .header{
+        max-width: 100%;
+        height: auto;
+    }
+    body{
+        max-width: 100%;
+        height: auto;
+    }
+    h1{
+        display: none;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+    }  
+    .escudo{
+        display: none;
+    } 
+}
+/*Propiedades globales para la web*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: rubik;
+    scroll-behavior: smooth;
+ 
+}
+body {
+    /*cambiar la imagen de cada equipo*/
+    background-image: url(imagenes/fondo3.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    margin: 0;
+}
+/*Propiedades globales para las imagenes*/
+img {
+    max-width: 100%;
+    max-height: 100%;
+   }
+.header {
+    position: relative;
+    width: 100%;
+    min-width: 900px;
+    padding: 2px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #203239;
+}
+/* Barra de superior con equipos */
+.logo {
+    margin-left: 20px;
+    width: 100px;
+}
+h1{
+    margin-right: 100px;
+    font-size: 48px;
+    color: rgb(18, 111, 233);
+    text-align: center;
+}
+.ul-nav {
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 110px;
+    position: absolute;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+    padding: 20px;
+    transition: all .3s;
+    color: #fff;
+}
+
+li:hover {
+    background-color: #235264;
+    border-radius: 2px;
+}
+
+.ul-cursos {
+    position: absolute;
+    display: none;
+    transform: translateY(20px);
+}
+
+.ul-cursos>li {
+    margin-top: 2px;
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #416781;
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-20px);
+    padding: 20px;
+    border-radius: 2px;
+}
+.ul-cursos>li:hover {
+    background-color: #235264;
+}
+.li-cursos:hover>.ul-cursos {
+    display: block;
+}
+.ul-asig {
+    position: absolute;
+    display: none;
+    transform: translateY(20px);
+}
+.ul-asig>li {
+    margin-top: 2px;
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #416781;
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-20px);
+    padding: 20px;
+    border-radius: 2px;
+}
+.ul-asig>li:hover {
+    background-color: #235264;
+}
+
+.li-asig:hover>.ul-asig {
+    display: block;
+}
+.ul-hor {
+    position: absolute;
+    display: none;
+    transform: translateY(20px);
+}
+.ul-hor>li {
+    margin-top: 2px;
+    border-bottom: solid 1px #fff;
+    text-align: center;
+    background-color: #416781;
+    padding: 20px;
+    width: 190px;
+    transform: translateX(-20px);
+    padding: 20px;
+    border-radius: 2px;
+}
+.ul-hor>li:hover {
+    background-color: #235264;
+}
+.li-hor:hover>.ul-hor {
+    display: block;
+}
+
+/*Cabecera de equipo*/
+h2{
+    margin-right: 100px;
+    font-size: 48px;
+    color: rgb(230, 197, 14);
+    text-align: center;
+    margin: auto;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+.escudo{
+    display: block;
+    margin: 0px auto;
+    width: 300px;
+    height: 300px;
+    transition:1.6s ease;
+       
+}
+.escudo:hover{
+    z-index:500;
+	transform:scale(2);
+}
+
+p{
+    color: #fff;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, .7);
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-align: justify;
+}
+.team{
+    display: block;
+    margin: 0px auto;
+    width:1000px ; 
+    height: 1000px; 
+    margin-top: 30px; 
+}
+/*Pie de pagina como en index, creadores y mail de contacto*/
+.footer {
+    background-color: #141E27;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.txt_footer {
+    font-weight: 100;
+}
+
+.mail {
+    color: #fff;
+    text-decoration: none;
+}
+/*hover crea una sub clase en a*/
+a:hover{	
+	color: red;
+	font-size: 25px;
+}
+.mail:hover {
+    color: #bbb;
+    text-decoration: underline;
+}

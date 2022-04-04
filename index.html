@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="imagenes/Copa.png">
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="autores" content="Colina, Dutra, Segovia">
+    <meta name="descripcion" content="Bienvenidos a la web de la Copa Libertadores 2022">
+    <meta name="keywords" content="libertadores, Copa Libertadores, Libertadores 2022">
+    <title>Libertadores 2022</title>
+</head>
+<body>
+    <!--Imagen de la Copa, texto y opciones de equipos desplegables-->
+    <header class="header">
+        <a href="index.html"><img src="imagenes/Copa.png" alt="Logo" title="Inicio" class="logo"></a>
+        <br>
+        <ul class="ul-nav">
+            <h1>COPA LIBERTADORES 2022</h1>
+            <li class="li-cursos">Grupo A
+                <ul class="ul-cursos">
+                    <a href="boca.html"><li class="mec">Boca</li></a>
+                    <a href="river.html"><li class="prog">River</li></a>
+                </ul>
+            </li>
+            <li class="li-asig">Grupo B
+                <ul class="ul-asig">
+                    <a href="fenix.html"><li class="fis">Fenix</li></a>
+                    <a href="flamengo.html"><li class="java">Flamengo</li></a>
+                </ul>
+            </li>
+            <li class="li-hor">Grupo C
+                <ul class="ul-hor">
+                    <a href="fluminense.html"><li class="lun">Fluminense</li></a>
+                    <a href="ucatolica.html"><li class="mar">U.Catolica</li></a>
+                </ul>
+            </li>
+            <li class="li-hor">Grupo D
+                <ul class="ul-hor">
+                    <a href="barcelona.html"><li class="lun">Barcelona</li></a>
+                    <a href="thestrongest.html"><li class="mar">The Strongest</li></a>
+                </ul>
+            </li>
+        </ul>
+    </header>
+        <!--Imagen de la copa libertadores ocupando todo el largo-->
+    <section class="logo2">
+        <img src="imagenes/logo.jpg">
+    </section>
+    <!--Barra de busqueda-->
+    <section class="webdesigntuts-workshop">
+        <form action="" method="">		    
+            <input type="search" placeholder="Ingresa lo que deseas buscar">		    	
+            <button>Buscar</button>
+        </form>
+    </section>   
+      <script class="cssdeck" src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+      <!--Tabla de equipos-->      
+      <div class="tabla">
+                <table border="5">
+                    <tr>
+                        <th bgcolor="#36ddc9">Paises</th>
+                        <th bgcolor="#36ddc9">Clasificados</th>
+                        <th bgcolor="#36ddc9">Otros</th>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">A</td>
+                        <td>Boca</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <td>River</td>
+                        <td>Argentina</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">B</td>
+                        <td>Fenix</td>
+                        <td>Uruguay</td>
+                    </tr>
+                    <tr>
+                        <td>Flamengo</td>
+                        <td>Brasil</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">C</td>
+                        <td>Fluminense</td>
+                        <td>Brasil</td>
+                    </tr>
+                    <tr>
+                        <td>U.Catolica</td>
+                        <td>Chile</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">D</td>
+                        <td>Barcelona</td>
+                        <td>Ecuador</td>
+                    </tr>
+                    <tr>
+                        <td>The Strongest</td>
+                        <td>Bolivia</td>
+                    </tr>
+                    </table>
+         </div>
+    </div>
+         <br>
+         <!--Texto con Hoover y redireccion a web de la Libertadores al dar click-->
+         <p><b>Si quieres saber mas, pulsa <a href="https://conmebollibertadores.com/" target="_blank"><abbr style="text-decoration:none;" title="Enlace a La Web de la Copa Libertadores">aqui</abbr></a></b></p>
+         <br>
+         <div ID="contenedor">
+             <section class="izquierda">
+                 <img src="imagenes/copa2.jpg" alt="Imagen de la Copa en la Cancha">
+                </section>
+                <!--Formulario para la inscripcion de un sorteo-->
+             <section class="derecha">
+                <form class="form" id="form">
+                    <h1 class="contact">Participa por el Sorteo de entradas</h1>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" required class="nombre" placeholder="Escriba su nombre aqui">
+        
+                    <label for="edad">Edad:</label>
+                    <input type="text" id="edad" required class="edad" placeholder="Escriba su edad aqui">
+        
+                    <label for="mail">Mail:</label>
+                    <input type="text" id="mail" required class="email" placeholder="Escriba su mail aqui">
+        
+                    <label for="text">Mensaje:</label>
+                    <textarea id="text" class="mensaje" required placeholder="Escriba su mensaje aqui"></textarea>
+        
+                    <button type="button">
+                        Participar
+                    </button>
+                    <button type="button">
+                        <a href="index.html" class="button">Reset</a>
+                    </button>
+                </form>
+             </section>
+         </div>
+        <!--Pie de pagina con enlace a las redes sociales-->
+         <footer>
+             <!--Agregamos un video a nuestra web-->
+            <video src="imagenes/videolibertadores.mp4"  controls poster="Video Libertadores 2022"> 
+                </video>
+                <br>
+                <br>
+                <!--Enlace a las redes sociales con animaciones en los iconos-->
+             <h2>Siguenos en nuestras redes sociales dando click a cada imagen</h2>
+             <br>
+            <a title="Facebook" href="https://es-la.facebook.com/CopaLibertadores/" target="_blank"><img class="social" src="imagenes/Facebook.png" alt="Facebook Libertadores" ></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a title="Instagram" href="https://www.instagram.com/libertadores/?hl=es-la" target="_blank"><img class="social" src="imagenes/Instagram.png" alt="Instagram Libertadores" ></a>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <a title="Twitter" href="https://twitter.com/Libertadores" target="_blank"><img class="social" src="imagenes/Twitter.png" alt="Twitter Libertadores" ></a>
+            <div class="footer">
+                <h5 class="txt_footer">© Emilio Colina - Thiago Segovia - Victor Dutra &nbsp;&nbsp;&nbsp;&nbsp;<a class="mail" target="_BLANK" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSGMvdMcxFXjdLXxcmNKTMVMrSFQPWKVXTvGHnJVBPLjLXFBXkXhwjvbKHVFPnGZXvVcRLrN">Mail de contacto: tricksterteam@gmail.com</a></h5>
+            </div>
+
+         </footer>
+         <br>
+</body>
+</html>
